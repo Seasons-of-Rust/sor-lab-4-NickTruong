@@ -40,7 +40,7 @@ impl Shop {
             }
         }
 
-        match(wins, losses) {
+        match (wins, losses) {
             (wins, losses) if wins > losses => FightResult::Win,
             (wins, losses) if wins < losses => FightResult::Loss,
             (wins, losses) if wins == losses => FightResult::Tie,
